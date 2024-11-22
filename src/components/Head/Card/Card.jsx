@@ -1,8 +1,4 @@
 import React from "react";
-import { UserContext } from "../../../context/UserContext";
-
-
-
 
 const Card = (data) => {
   const {name,email,imgUrl,age} = data.data

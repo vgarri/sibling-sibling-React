@@ -3,7 +3,7 @@ import { Button } from "@mui/material"
 import { UserContext } from "../../../context/UserContext"
 
 const Form = () => {
-  const { updateUser } = useContext(UserContext)
+  const { updateUser } = useContext(UserContext) //FORM CONSUME LA FUNCION DEL CONTEXTO (FUMADITA)
   const [userInfo, setUserInfo] = useState({
     name: "",
     email: "",
@@ -27,12 +27,6 @@ const Form = () => {
     updateUser(userInfo);
     
   };
-
-
-
-
-
-
 
 
   return <>
