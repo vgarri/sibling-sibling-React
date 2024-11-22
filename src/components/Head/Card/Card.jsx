@@ -1,7 +1,19 @@
 import React from "react";
+import { UserContext } from "../../../context/UserContext";
 
-const Card = () => {
-  return <div>Card</div>;
+
+
+
+const Card = (data) => {
+  const {name,email,imgUrl,age} = data.data
+  return <>
+  <div className="usercard">
+  <h1>username: {name}</h1>
+  <h1>email: {email}</h1>
+  <img src={imgUrl}></img>
+  <h4>age: {age}</h4>
+  </div>
+  </>;
 };
 
 export default Card;
