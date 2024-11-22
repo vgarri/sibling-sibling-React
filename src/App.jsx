@@ -6,7 +6,7 @@ import { UserContext } from "./context/UserContext"
 import Card from "./components/Head/Card";
 function App() {
   const [user, setUser] = useState({ 
-    name: "bolito",
+    name: "",
     email: "",
     imgUrl: "",
     age: 0});
@@ -32,9 +32,9 @@ function App() {
   return (
     <>
       <UserContext.Provider value={userData}>
-        <h1>You're logged-in as: {user.email}</h1>
+        {user.email == "" ? <h3>You're not logged-in🤔</h3> : <h3>Welcome!👋🏻 You're logged-in as: {user.email}</h3> }
         <Head />
-        {renderCard()}
+        {user.email ? renderCard() : ""}
       </UserContext.Provider>
     </>
   )

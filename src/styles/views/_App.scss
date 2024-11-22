@@ -16,7 +16,9 @@ section{
     display: flex;
     justify-content: center;
     background-color: #ffd6ff;
+    border-radius: 8px;
+    box-shadow: 7px 7px 5px -1px #00000011;
 }
-h1{
+h1,h3{
     margin: 20px;
 }

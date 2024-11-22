@@ -40,7 +40,7 @@ const Form = () => {
       <input type="text" name="name" placeholder="username" onChange={handleChange} />
       <input type="text" name="email" placeholder="email" onChange={handleChange} />
       <input type="text" name="age" placeholder="age" onChange={handleChange} />
-      <input type="text" name="imgUrl" placeholder="imgUrl" onChange={handleChange} />
+      <input type="text" name="imgUrl" placeholder="image URL" onChange={handleChange} />
       <Button type="submit" variant="contained">LOGIN</Button>
     </form>
   </>;
